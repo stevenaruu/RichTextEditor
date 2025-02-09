@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# React-based Rich Text Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This documentation provides an overview of the React‑based rich editor preset implemented with modern web technologies. The project leverages a powerful stack designed for speed, type safety, and seamless editing functionality. The rich editor preset is built to offer a complete content management experience within a React application. It allows users to perform all core CRUD operations—read, create, update, and delete editor content—while ensuring high performance and an intuitive user interface.
 
-Currently, two official plugins are available:
+## Technology Stack
+1. **React (Vite SWC):** The core framework for the application.
+3. **TypeScript:** For robust type safety.
+4. **Tiptap:** Powers the rich text editing functionality. 
+5. **Tailwind CSS:** Ensures rapid, responsive styling.
+6. **shadcdn:** Manages components and assets delivery.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key of Features
+1. Rich Editor Initialization:
+   - Initializes a Tiptap editor that supports text formatting options such as Bold, Italic, and Underline.
+   - Provides multiple heading options (h1, h2, h3) along with bullet and numbered lists, all implemented within a customizable toolbar
+2. Content Persistence:  
+    - Integrates with localStorage and react‑redux for saving, reading, and updating the editor’s state in HTML format.  
+    - Supports reinitialization of the editor from the serialized state.
+3. Custom Enhancements:  
+    - Implements a custom “Highlight” block that applies a custom color to selected text, accessible via the toolbar.
+4. User Experience Improvements:  
+    - Includes keyboard shortcuts (e.g., Ctrl+B, Ctrl+I, Ctrl+U) to streamline editing.  
+    - Features a responsive UI that updates in real-time as the user types or applies formatting.
+5. Design Approach:  
+    - Adopts Atomic Design principles to ensure a scalable and maintainable code structure.
 
-## Expanding the ESLint configuration
+## Getting started
+This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Prerequisites
+- [Node.js](https://nodejs.org/en/) (v18 or later)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+1. Clone this repository:
+```bash
+git clone https://github.com/stevenaruu/RichTextEditor.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navigate to the project directory:
+```bash
+cd RichTextEditor
+```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Install dependencies
+```bash
+npm install
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+4. Start the program
+```bash
+npm run dev
 ```
