@@ -2,7 +2,7 @@ import { SidebarProvider } from "../../components/ui/sidebar"
 import { Container } from "../../components/container/container"
 import Navbar from "../../components/molecules/navbar"
 import { AppSidebar } from "../../components/molecules/app-sidebar"
-import Document from "../../components/organisms/Document"
+import Document from "../../components/organisms/document"
 
 import '../../index.css'
 
