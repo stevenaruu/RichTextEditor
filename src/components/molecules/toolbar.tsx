@@ -9,7 +9,7 @@ import OrderedIcon from '../../assets/icon/ordered-list.svg';
 
 const Toolbar = ({editor}: {editor: Editor}) => {
   return (
-    <div className="mt-10 gap-3 flex justify-center items-center">
+    <div className="mt-10 gap-3 flex flex-wrap justify-center items-center">
       <Select
         value={
           editor.isActive('heading', { level: 1 })

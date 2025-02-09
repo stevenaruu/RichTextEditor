@@ -21,12 +21,6 @@ const Navbar = () => {
               <Slash />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              <BreadcrumbLink>Components</BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator>
-              <Slash />
-            </BreadcrumbSeparator>
-            <BreadcrumbItem>
               <BreadcrumbLink>{document?.title}</BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
