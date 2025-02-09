@@ -1,16 +1,20 @@
 # React-based Rich Text Editor
 
-## Overview
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f1dfff9c-97e4-4bd3-81ae-f6587345616d" alt="Overview Website">
+</div>
+
+# Overview
 This documentation provides an overview of the React‑based rich editor preset implemented with modern web technologies. The project leverages a powerful stack designed for speed, type safety, and seamless editing functionality. The rich editor preset is built to offer a complete content management experience within a React application. It allows users to perform all core CRUD operations—read, create, update, and delete editor content—while ensuring high performance and an intuitive user interface.
 
-## Technology Stack
+# Technology Stack
 1. **React (Vite SWC):** The core framework for the application.
 3. **TypeScript:** For robust type safety.
 4. **Tiptap:** Powers the rich text editing functionality. 
 5. **Tailwind CSS:** Ensures rapid, responsive styling.
 6. **shadcdn:** Manages components and assets delivery.
 
-## Key of Features
+# Key of Features
 1. Rich Editor Initialization:
    - Initializes a Tiptap editor that supports text formatting options such as Bold, Italic, and Underline.
    - Provides multiple heading options (h1, h2, h3) along with bullet and numbered lists, all implemented within a customizable toolbar
@@ -25,13 +29,13 @@ This documentation provides an overview of the React‑based rich editor preset 
 5. Design Approach:  
     - Adopts Atomic Design principles to ensure a scalable and maintainable code structure.
 
-## Getting started
+# Getting started
 This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
-## Prerequisites
+# Prerequisites
 - [Node.js](https://nodejs.org/en/) (v18 or later)
 
-## Installation
+# Installation
 1. Clone this repository:
 ```bash
 git clone https://github.com/stevenaruu/RichTextEditor.git
