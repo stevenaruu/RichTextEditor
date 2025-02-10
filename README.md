@@ -13,6 +13,7 @@ This documentation provides an overview of the React‑based rich editor preset 
 4. **Tiptap:** Powers the rich text editing functionality. 
 5. **Tailwind CSS:** Ensures rapid, responsive styling.
 6. **shadcdn:** Manages components and assets delivery.
+7. **Redux:** Manages global and persist the state in localStorage. 
 
 # Key of Features
 1. Rich Editor Initialization:
